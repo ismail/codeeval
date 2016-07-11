@@ -14,7 +14,6 @@ func main() {
 	}
 	defer file.Close()
 
-	var info os.FileInfo
-	info, _ = file.Stat()
+	info, _ := file.Stat()
 	fmt.Printf("%d", info.Size())
 }
